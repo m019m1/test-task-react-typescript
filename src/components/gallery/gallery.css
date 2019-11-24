@@ -1,0 +1,25 @@
+.input {
+  width: 400px;
+  margin: 10px;
+}
+
+.gallery {
+  border: 1px solid blue;
+}
+.gallery__list {
+  list-style-type: none;
+  display: flex;
+}
+.gallery__thumbs {
+  display: block;
+  width: 300px;
+  height: 300px;
+  margin-right: 10px;
+  overflow: hidden;
+  border: 1px solid #000;
+  padding-bottom: 100%;
+  background-size: cover;
+  /* 		&__img {
+  
+  		} */
+}

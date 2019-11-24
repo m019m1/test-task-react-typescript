@@ -1,24 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
+import Header from './components/header/header';
+import Footer from './components/footer/footer';
 import './App.css';
 
-const App: React.FC = () => {
+const links: Array<{href: string, title: string}> = [
+	{href: '/', title: 'Home'},
+	{href: '/gallery', title: 'Gallery'},
+	{href: '/apiClient', title: 'API Client'},
+]
+
+
+const App: React.FC = ({children}) => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Header links={links} />
+			<main className='mainContent'>
+				{children}
+			</main>
+			<Footer />
     </div>
   );
 }

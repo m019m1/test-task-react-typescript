@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -20,3 +20,13 @@
 .App-link {
   color: #09d3ac;
 }
+ */
+ .App {
+	 width: 60%;
+	 max-width: 1000px;
+	 margin: auto;
+ }
+ .mainContent {
+	 min-height: 500px;
+	 border: 1px solid green;
+ }

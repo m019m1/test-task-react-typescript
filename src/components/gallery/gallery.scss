@@ -1,0 +1,27 @@
+$size: 300px;
+// $size: 30%;
+
+.input {
+	width: 400px;
+	margin: 10px;
+}
+.gallery {
+	border: 1px solid blue;
+	&__list {
+		list-style-type: none;
+		display: flex;
+	}
+	&__thumbs {
+		display: block;
+		width: $size;
+		height: $size;
+		margin-right: 10px;
+		overflow: hidden;
+		border: 1px solid #000;
+		padding-bottom: 100%;
+		background-size: cover;
+/* 		&__img {
+
+		} */
+	}
+}
