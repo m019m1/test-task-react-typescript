@@ -4,7 +4,8 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	-moz-osx-font-smoothing: grayscale;
+	background: radial-gradient(rgb(169, 209, 255) , rgba(255,255,255,0));
 }
 
 code {
@@ -12,7 +13,7 @@ code {
     monospace;
 }
 * {
-	/* margin: 0; */
+	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }

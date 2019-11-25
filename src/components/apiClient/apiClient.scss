@@ -1,0 +1,13 @@
+.repos {
+	&__list {
+		list-style-type: none;
+		margin-left: 20px;
+		a {
+			color: rgb(82, 82, 82);
+			text-decoration: none;
+			&:hover {
+				color: rgb(236, 154, 0);
+			}
+		}
+	}
+}

@@ -1,27 +1,29 @@
 $size: 300px;
-// $size: 30%;
 
 .input {
-	width: 400px;
-	margin: 10px;
+	width: 600px;
+	margin: 50px 10px;
+	padding: 5px;
+}
+.submit {
+	padding: 5px;
 }
 .gallery {
-	border: 1px solid blue;
 	&__list {
 		list-style-type: none;
 		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: 25px;
 	}
 	&__thumbs {
 		display: block;
 		width: $size;
 		height: $size;
-		margin-right: 10px;
+		margin-top: 25px;
 		overflow: hidden;
-		border: 1px solid #000;
-		padding-bottom: 100%;
+		border: 1px solid rgb(150, 150, 150);
+		box-shadow: 0 0 20px rgb(182, 182, 182);
 		background-size: cover;
-/* 		&__img {
-
-		} */
+		margin-left:25px;
 	}
 }

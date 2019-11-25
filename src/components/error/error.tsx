@@ -1,9 +1,11 @@
 import React from 'react';
+import './error.css';
 
-const Error = () => {
-
+const Error: React.FC = () => {
 	return (
-		<p>This is Error</p>
+		<section className='error'>
+			<p>Error 404. Sorry, the requested page not found</p>
+			</section>
 	)
 }
 

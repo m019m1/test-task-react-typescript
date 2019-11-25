@@ -9,7 +9,6 @@ interface Props {
 	links: Array<{href: string, title: string}>,
 }
 
-// const Header: React.FC<Props> = ({ links }) : JSX.Element => {
 class Header extends Component<Props, State>  {
 	state = {
 		menuOpen: false
@@ -27,9 +26,9 @@ class Header extends Component<Props, State>  {
 
 		return (
 			<header className='header'>
-					<button className='navButton' onClick={this.buttonHandle} >Menu</button>
-					<nav className='menu'>
-						<ul className={`menu__list ${ menuOpen && 'open' }`}>
+					<button className='navButton' onClick={this.buttonHandle}>Menu</button>
+					<nav className={`menu ${ menuOpen && 'open' }`}>
+						<ul className='menu__list'>
 							{links.map( ({href, title}) => (
 								<li className='menu__list__item' key={title}>
 									<NavLink exact to={href}>
@@ -42,7 +41,6 @@ class Header extends Component<Props, State>  {
 			</header>
 		)
 	}
-
 }
 
 export default Header;

@@ -1,0 +1,11 @@
+.repos__list {
+  list-style-type: none;
+  margin-left: 20px;
+}
+.repos__list a {
+  color: #525252;
+  text-decoration: none;
+}
+.repos__list a:hover {
+  color: #ec9a00;
+}

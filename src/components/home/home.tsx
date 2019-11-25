@@ -1,9 +1,11 @@
 import React from 'react';
+import './home.css';
 
-const Home = () => {
-
+const Home: React.FC = () => {
 	return (
-		<p>This is Home Page</p>
+		<section className='home'>
+			<p>This is Home Page. Please, select desired section in Menu from above</p>
+		</section>
 	)
 }
 

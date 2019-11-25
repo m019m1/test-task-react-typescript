@@ -1,10 +1,10 @@
 import React from 'react';
+import './footer.css';
 
-const Footer = () => {
-
+const Footer: React.FC = () => {
 	return (
-		<footer>
-			<p>Yaroslav Polyanskiy</p>
+		<footer className='footer'>
+			<p className='footer__content'>(c) Yaroslav Polyanskiy</p>
 		</footer>
 	)
 }
