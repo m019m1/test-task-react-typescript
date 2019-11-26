@@ -11,3 +11,21 @@
 		}
 	}
 }
+.spinner {
+	position: absolute;
+	top: calc(50% - 20px);
+	left: calc(50% - 20px);
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	border-top: 10px solid rgba(0, 63, 236, .7);
+	border-right: 10px solid rgba(0, 236, 51, .7);
+	border-bottom: 10px solid rgba(255, 251, 13, .7);
+	border-left: 10px solid rgba(255, 13, 13, .7);
+	animation: spin 1s linear infinite;
+}
+@keyframes spin {
+	100% {
+		transform: rotate(720deg);
+	}
+}

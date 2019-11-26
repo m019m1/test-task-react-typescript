@@ -1,5 +1,6 @@
 import React, { Component, CSSProperties } from 'react';
 import './gallery.css';
+import placeholder from './placeholder.jpg';
 
 const urls = [
 	{url: 'https://www.1zoom.ru/big2/174/251457-svetik.jpg'},
@@ -18,7 +19,7 @@ class Gallery extends Component<State>  {
 		urls: urls,
 		inputURL: '',
 	}
-
+	
 	inputChangeListener = (event: React.ChangeEvent<HTMLInputElement>) => {
     this.setState({
       inputURL: event.target.value,
@@ -45,8 +46,9 @@ class Gallery extends Component<State>  {
 						{urls.map( ({url}, index) => {
 							const styles: CSSProperties = {backgroundImage: `url(${url})`}
 							return (
-								<li key={index} >
+								<li key={index} className="gallery__item">
 									<a href={url} target="_blank" rel="noopener noreferrer" className="gallery__thumbs" style={styles}></a>
+									<img className="placeholder" src={placeholder} alt="1"/>
 								</li>
 							)
 						})}

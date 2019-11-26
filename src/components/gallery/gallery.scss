@@ -1,4 +1,5 @@
 $size: 300px;
+$shift: 25px;
 
 .input {
 	width: 600px;
@@ -13,17 +14,29 @@ $size: 300px;
 		list-style-type: none;
 		display: flex;
 		flex-wrap: wrap;
-		margin-bottom: 25px;
+		margin-bottom: $shift;
 	}
 	&__thumbs {
 		display: block;
 		width: $size;
 		height: $size;
-		margin-top: 25px;
+		margin-top: $shift;
 		overflow: hidden;
 		border: 1px solid rgb(150, 150, 150);
 		box-shadow: 0 0 20px rgb(182, 182, 182);
 		background-size: cover;
-		margin-left:25px;
+		margin-left: $shift;
 	}
+	&__item {
+		position: relative;
+	}
+}
+.placeholder {
+	position: absolute;
+	top: $shift;
+	left: $shift;
+	z-index: -1;
+	width: $size;
+	height: $size;
+	background-size: cover;
 }
