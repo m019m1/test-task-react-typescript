@@ -15,7 +15,7 @@ interface State {
 	inputURL: string,
 }
 
-class Gallery extends Component<State>  {
+class Gallery extends Component<{}, State>  {
 	state = {
 		urls: urls,
 		inputURL: '',
