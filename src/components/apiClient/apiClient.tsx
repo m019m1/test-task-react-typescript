@@ -64,7 +64,7 @@ class APIclient extends Component<State>  {
 		const { repos, accountName, spinner } = this.state;
 		return (
 			<div>
-				<Form value={accountName} onChange={this.inputChangeListener} placeholder="See repositories" onClick={this.getRepositories} />
+				<Form value={accountName} onChange={this.inputChangeListener} placeholder="Enter Github's account" onClick={this.getRepositories} btnValue="See repositories"/>
 				<section className="repos">
 					<ul className="repos__list">
 						{ spinner && <div className="spinner"></div> }

@@ -40,7 +40,7 @@ class Gallery extends Component<State>  {
 		
 		return (
 			<div>
-				<Form value={inputURL} onChange={this.inputChangeListener} placeholder="Enter picture's URL" onClick={this.addPicture.bind(null, urls)} />
+				<Form value={inputURL} onChange={this.inputChangeListener} placeholder="Enter picture's URL" onClick={this.addPicture.bind(null, urls)} btnValue="Add picture to Gallery" />
 				<section className="gallery">
 					<ul className="gallery__list">
 						{urls.map( ({url}, index) => {
