@@ -1,8 +1,10 @@
-.input {
-	width: 600px;
-	margin: 50px 10px;
-	padding: 5px;
-}
-.submit {
-	padding: 5px;
+.form {
+	&__input {
+		width: 600px;
+		margin: 50px 10px;
+		padding: 5px;
+	}
+	&__submit {
+		padding: 5px;
+	}
 }

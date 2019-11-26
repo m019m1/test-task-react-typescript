@@ -6,14 +6,14 @@ type Props = {
 	onChange: (event: React.ChangeEvent<HTMLInputElement>) => void,
 	placeholder: string,
 	onClick: () => void,
-	btnValue: string,
+	btnValue: string
 }
 
 const Form: React.FC<Props> = ({value, onChange, placeholder, onClick, btnValue}) => {
 	return (
 		<div className="form">
-			<input className='input' value={value} onChange={onChange} type="text" placeholder={placeholder} />
-			<button className='submit' onClick={onClick}> {btnValue} </button>
+			<input className='form__input' value={value} onChange={onChange} type="text" placeholder={placeholder} />
+			<button className='form__submit' onClick={onClick} disabled={value ? false : true}> {btnValue} </button>
 		</div>
 	)
 }
