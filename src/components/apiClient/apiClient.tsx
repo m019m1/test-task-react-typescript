@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import './apiClient.css';
+import Form from '../form/form';
+import './apiClient.scss';
 
 interface State {
 	repos: Array<{name: string, url: string}>,
@@ -63,8 +64,7 @@ class APIclient extends Component<State>  {
 		const { repos, accountName, spinner } = this.state;
 		return (
 			<div>
-				<input className='input' value={accountName} onChange={this.inputChangeListener} type="text" placeholder="Enter Github's account" />
-				<button className='submit' onClick={this.getRepositories}>See repositories</button>
+				<Form value={accountName} onChange={this.inputChangeListener} placeholder="See repositories" onClick={this.getRepositories} />
 				<section className="repos">
 					<ul className="repos__list">
 						{ spinner && <div className="spinner"></div> }

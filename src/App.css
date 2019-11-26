@@ -2,8 +2,11 @@
 	width: 60%;
 	max-width: 1000px;
 	margin: auto;
+	display: grid;
+	grid-template-rows: 100px  1fr  100px;
+	min-height: 100vh;
 }
 .mainContent {
-	min-height: calc(100vh - 200px);
 	position: relative;
+	display: flex;
 }

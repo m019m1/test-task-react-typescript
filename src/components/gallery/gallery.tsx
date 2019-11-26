@@ -1,5 +1,6 @@
 import React, { Component, CSSProperties } from 'react';
-import './gallery.css';
+import Form from '../form/form';
+import './gallery.scss';
 import placeholder from './placeholder.jpg';
 
 const urls = [
@@ -39,8 +40,7 @@ class Gallery extends Component<State>  {
 		
 		return (
 			<div>
-				<input className='input' value={inputURL} onChange={this.inputChangeListener} type="url" placeholder="Enter picture's URL" />
-				<button className='submit' onClick={this.addPicture.bind(null, urls)} >Add picture to Gallery</button>
+				<Form value={inputURL} onChange={this.inputChangeListener} placeholder="Enter picture's URL" onClick={this.addPicture.bind(null, urls)} />
 				<section className="gallery">
 					<ul className="gallery__list">
 						{urls.map( ({url}, index) => {
